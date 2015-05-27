@@ -1,0 +1,107 @@
+/*
+   Grids
+   - Object allows the creation of simple grid structures
+   - Stop worrying and go to the pub http://dbushell.com/2013/03/19/on-responsive-layout-and-grids/
+   ========================================================================== */
+
+.l-grid {
+    @include cf;
+    padding: 0;
+    margin: 0 -1.5em;
+}
+
+.l-grid-unit {
+    @include cf;
+    display: block;
+    float: left;
+    padding: 0 1.5em;
+    width: 100%;
+}
+
+/**
+ * Variations of base grid
+ */
+
+
+.l-grid--tight {
+    margin: 0 -0.5em;
+
+    > .l-grid-unit {
+        padding: 0 0.5em;
+    }
+}
+
+
+/**
+ * Common column abstractions
+ */
+
+
+.l-grid--split {
+    > .l-grid-unit {
+        width: 50%;
+    }
+}
+
+.l-grid--split--reverse {
+
+    > .l-grid-unit:first-child {
+        // slightly better x-browser compat than last;
+        float: right;
+    }
+}
+
+
+
+.l-grid--1to2-col {
+
+    > .l-grid-unit {
+
+        @include respond-min($bp-tablet) {
+            width: 50%;
+            &:nth-child(odd) {
+                clear: left;
+            }
+        }
+
+    }
+
+}
+
+.l-grid--footer {
+
+    > .l-grid-unit:first-child {
+
+        @include respond-min($bp-tablet) {
+            width: 60%;
+        }
+
+    }
+
+    > .l-grid-unit {
+
+        @include respond-min($bp-tablet) {
+            width: 40%;
+        }
+
+    }
+
+}
+
+
+
+.l-grid--1to3-col {
+
+    > .l-grid-unit {
+
+        @include respond-min($bp-tablet) {
+            width: 50%;
+        }
+
+        @include respond-min($bp-desktop) {
+            width: 33.3%;
+        }
+
+    }
+
+}
