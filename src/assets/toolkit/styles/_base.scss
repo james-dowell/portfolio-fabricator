@@ -1,4 +1,27 @@
 
 body {
-    font-family: sans-serif;
+    font-family: Open Sans;
+    line-height: 26px;
+    font-size: 16px;
+    color: $c-darkblue;
+}
+
+a {
+    color: $c-turquoise;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($c-turquoise, 15);
+        transition: color 0.2s;
+    }
+}
+
+.h1 {
+    font-size: 34px;
+    font-weight: lighter;
+}
+
+.h2 {
+    font-size: 26px;
+    font-weight: lighter;
 }

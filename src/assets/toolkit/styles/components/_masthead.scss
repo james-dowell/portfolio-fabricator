@@ -1,0 +1,52 @@
+.masthead {
+    min-height: 200px;
+    background: url('../images/fallback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.masthead__cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $c-darkblue;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.masthead__logo {
+    position: absolute;
+    z-index: 2;
+    padding: 2px;
+    border-radius: 50%;
+    background: rgba($c-darkblue, 0.5);
+    left: 50%;
+    margin-left: -36px;
+    top: 15%;
+
+    img {
+        padding: 7px 5px 0px 5px;
+    }
+}
+
+.masthead__heading {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    bottom: 40px;
+}
+
+.masthead__location {
+    color: white;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    position: absolute;
+}
