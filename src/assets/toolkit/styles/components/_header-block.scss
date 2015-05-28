@@ -7,14 +7,7 @@
     text-align: center;
 }
 
-.header-block__contact {
+.header-block__contact, .header-block__navigation {
     text-align: center;
-
-    ul {
-        display: inline-block;
-    }
-}
-
-.header-block__navigation {
-
+    margin: 10px 0px;
 }
