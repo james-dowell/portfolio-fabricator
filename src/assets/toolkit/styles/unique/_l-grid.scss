@@ -68,6 +68,16 @@
 
 }
 
+.l-grid--1to2-col--divide {
+    > .l-grid-unit:first-child {
+
+        @include respond-max($bp-tablet) {
+            border-bottom: 2px solid $c-darkblue;
+        }
+    }
+}
+
+
 .l-grid--footer {
 
     > .l-grid-unit:first-child {

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Open Sans;
@@ -16,12 +19,24 @@ a {
     }
 }
 
-.h1 {
-    font-size: 34px;
+h1, .h1 {
     font-weight: lighter;
+    font-size: 26px;
+    line-height: 36px;
+
+    @include respond-min($bp-tablet) {
+        font-size: 34px;
+        line-height: 40px;
+    }
 }
 
-.h2 {
-    font-size: 26px;
+h2, .h2 {
     font-weight: lighter;
+    font-size: 20px;
+    line-height: 28px;
+
+    @include respond-min($bp-tablet) {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
