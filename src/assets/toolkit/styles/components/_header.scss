@@ -1,7 +1,7 @@
 .header {
     @include respond-min($bp-tablet) {
         height: 100vh;
-        background-color: $c-darkblue;
+        background-color: $c-blue;
         color: white;
     }
 }
