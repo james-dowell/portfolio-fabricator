@@ -1,5 +1,9 @@
 .header {
-
+    @include respond-min($bp-tablet) {
+        height: 100vh;
+        background-color: $c-darkblue;
+        color: white;
+    }
 }
 
 .header__bio {
@@ -11,4 +15,12 @@
 .header__contact, .header__navigation {
     text-align: center;
     margin: 10px 0px;
+
+    @include respond-min($bp-desktop) {
+        margin: 20px 30px;
+    }
+}
+
+.header__contact {
+    border-bottom: solid 1px white;
 }

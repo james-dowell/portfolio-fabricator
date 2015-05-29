@@ -7,14 +7,14 @@
 .l-grid {
     @include cf;
     padding: 0;
-    margin: 0 -1.5em;
+    // margin: 0 -1.5em;
 }
 
 .l-grid-unit {
     @include cf;
     display: block;
     float: left;
-    padding: 0 1.5em;
+    // padding: 0 1.5em;
     width: 100%;
 }
 
@@ -58,7 +58,22 @@
     > .l-grid-unit {
 
         @include respond-min($bp-tablet) {
-            width: 50%;
+            width: 65%;
+            height: 100vh;
+            padding: 0;
+            overflow: auto;
+            &:nth-child(odd) {
+                clear: left;
+            }
+        }
+
+    }
+
+    > .l-grid-unit:first-child {
+
+        @include respond-min($bp-tablet) {
+            width: 35%;
+            padding: 0;
             &:nth-child(odd) {
                 clear: left;
             }
