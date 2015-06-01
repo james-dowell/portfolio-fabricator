@@ -56,24 +56,29 @@
 .l-grid--1to2-col {
 
     > .l-grid-unit {
+        padding: 20px;
 
         @include respond-min($bp-tablet) {
             width: 65%;
             height: 100vh;
-            padding: 0;
             overflow: auto;
             &:nth-child(odd) {
                 clear: left;
             }
         }
 
+        @include respond-min(1085px) {
+            width: calc(100% - 380px);
+        }
+
     }
 
     > .l-grid-unit:first-child {
+        padding: 0;
 
         @include respond-min($bp-tablet) {
             width: 35%;
-            padding: 0;
+            max-width: 380px;
             &:nth-child(odd) {
                 clear: left;
             }
