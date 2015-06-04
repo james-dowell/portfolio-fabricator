@@ -42,3 +42,15 @@ h2, .h2 {
         line-height: 36px;
     }
 }
+
+
+h3, .h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include respond-min($bp-tablet) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

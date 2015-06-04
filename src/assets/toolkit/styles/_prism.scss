@@ -5,8 +5,8 @@
  * @author ocodia
  */
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*="language-javascript"],
+pre[class*="language-javascript"] {
     color: #f8f8f2;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -28,20 +28,20 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre[class*="language-javascript"] {
     padding: 1em;
     margin: 1.5em 0;
     overflow: auto;
     border-radius: 2px;
+    background: $c-blue;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-    background: $c-blue;;
-}
+// :not(pre) > code[class*="language-"],
+// pre[class="language-javascript"] {
+// }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*="language-javascript"] {
     padding: .1em;
     border-radius: .3em;
 }

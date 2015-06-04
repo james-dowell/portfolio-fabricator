@@ -1,0 +1,26 @@
+.comment {
+    margin: 1em 0em;
+    padding-top: 1em;
+    border-top: solid 1px $c-lightgrey;
+
+    p {
+        margin: 0;
+        padding-bottom: 1em;
+        margin-right: 2em;
+    }
+
+    .l-media-figure {
+        margin-top: 0.3em;
+        width: 60px;
+    }
+}
+
+.comment__author {
+    cite {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.1em;
+        display: block;
+        margin: 0em 0em 0.3em 0em;
+    }
+}

@@ -1,0 +1,42 @@
+.comment-box {
+
+    textarea, input {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 1px;
+        margin-bottom: 1em;
+        border: $c-faintblue solid 1px;
+
+        &:focus {
+            border: $c-turquoise solid 1px;
+            outline: none;
+        }
+    }
+}
+
+.comment-box__user {
+    label {
+        display: block;
+        overflow: hidden;
+    }
+
+    input {
+        width: 100%;
+
+        @include respond-min($bp-tablet) {
+            width: 60%;
+            float: right;
+        }
+    }
+
+}
+
+
+.comment-box__help {
+    margin-bottom: 1em;
+    margin-top: 0;
+
+    @include respond-min($bp-tablet) {
+        margin: 0;
+    }
+}

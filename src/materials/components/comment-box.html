@@ -2,6 +2,38 @@
 
     <h3>Leave a comment!</h3>
 
+    <div class="comment-box__user">
+        <label>
+            Name:
+            <input type="text" name="name">
+        </label>
+
+        <label>
+            Email:
+            <input type="text" name="email">
+        </label>
+
+        <label>
+            Website:
+            <input type="text" name="website">
+        </label>
+    </div>
+
     <textarea></textarea>
+
+    <div class="l-grid l-grid--1to2-col">
+        <div class="l-grid-unit">
+            <p class="comment-box__help">
+                You may use these HTML tags and attributes:
+                code,
+                a,
+                attr,
+                other tag
+            </p>
+        </div>
+        <div class="l-grid-unit">
+            {{> button }}
+        </div>
+    </div>
 
 </section>

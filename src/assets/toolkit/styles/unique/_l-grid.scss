@@ -51,9 +51,34 @@
     }
 }
 
-
-
 .l-grid--1to2-col {
+
+    > .l-grid-unit {
+
+        @include respond-min($bp-tablet) {
+            width: 30%;
+            &:nth-child(odd) {
+                clear: left;
+            }
+        }
+
+    }
+
+    > .l-grid-unit:first-child {
+
+        @include respond-min($bp-tablet) {
+            width: 70%;
+            &:nth-child(odd) {
+                clear: left;
+            }
+        }
+
+    }
+
+}
+
+
+.l-grid--1to2-col-65 {
 
     > .l-grid-unit {
         padding: 20px;

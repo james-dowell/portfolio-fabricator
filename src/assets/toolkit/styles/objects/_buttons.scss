@@ -1,4 +1,21 @@
 .button {
     background: transparent;
-    border-radius:
+    border-radius: 3px;
+    border: solid 1px $c-turquoise;
+    width: 100%;
+    color: $c-turquoise;
+    padding: 0.3em;
+
+    transition: 0.2s all;
+
+    &:hover {
+        background-color: $c-turquoise;
+        color: white;
+
+        transition: 0.2s all;
+    }
+
+    &:focus {
+        outline:none;
+    }
 }
